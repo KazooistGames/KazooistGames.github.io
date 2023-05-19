@@ -1,6 +1,6 @@
 @font-face {
   font-family: Requiem;
-  src: url('Requiem Regular.otf');
+  src: url('Requiem Regular.otf') format('opentype');
 }
 body { font-family: Requiem, sans-serif; padding: 0; margin: 0 }
 #unity-container { position: absolute }
