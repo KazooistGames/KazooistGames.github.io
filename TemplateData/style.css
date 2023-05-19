@@ -1,8 +1,12 @@
 @font-face {
-  font-family: Requiem;
+  font-family: RequiemRegular;
   src: url('Requiem Regular.otf') format('opentype');
 }
-body { font-family: Requiem, sans-serif; padding: 0; margin: 0 }
+@font-face {
+  font-family: RequiemBold;
+  src: url('Requiem Bold.otf') format('opentype');
+}
+body { font-family: RequiemRegular, sans-serif; padding: 0; margin: 0 }
 #unity-container { position: absolute }
 #unity-container.unity-desktop {top: 40vh; left: 50%; transform: translateX(-50%) }
 #unity-container.unity-mobile { width: 100%; height: 100% }
