@@ -6,32 +6,10 @@
     <title>Unity WebGL Player | Catacoomber</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-    body {
-      background-color: #736584; /* Set the background color of the page */
-    }
-    h1 {
-      text-align: center; /* Center the <h1> element */
-      color: #877554; /* Set the font color of the <h1> element */
-      font-family: RequiemBold, sans-serif;
-    }
-    h2 {
-    text-align: center; /* Center the <h1> element */
-    color: #663931; /* Set the font color of the <h1> element */
-    }
-  </style>
   </head>
-  <body style="display: flex; flex-direction: column;">
-    <div margin: 5vw 5vh;>
-      <h1>Kazooist's Games</h1>
-      <h2>
-        I want to make games that put the the challenge of golden-age arcade games into the mystique of classic RPG games from the 90s.<br>
-        Nostalgia isnt everything, and game design has come a long way, <br>
-        so I intend to use modern design principles where I can and improve upon the old formats and aesthetics.<br>
-      </h2>
-    </div>  
+  <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=80vw height=80vh ></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -78,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Catacoomber_05-10-2023.loader.js";
+      var loaderUrl = buildUrl + "/Requiem_09-04-2023.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Catacoomber_05-10-2023.data",
-        frameworkUrl: buildUrl + "/Catacoomber_05-10-2023.framework.js",
-        codeUrl: buildUrl + "/Catacoomber_05-10-2023.wasm",
+        dataUrl: buildUrl + "/Requiem_09-04-2023.data",
+        frameworkUrl: buildUrl + "/Requiem_09-04-2023.framework.js",
+        codeUrl: buildUrl + "/Requiem_09-04-2023.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kazooist Games",
         productName: "Catacoomber",
@@ -117,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "80vw";
-        canvas.style.height = "80vh";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
